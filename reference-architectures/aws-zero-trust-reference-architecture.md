@@ -1,3 +1,116 @@
+title: AWS Zero Trust Reference Architecture
+version: 1.0
+status: Stable
+owner: Leandro Santos
+last_updated: 2026-07-18
+cloud: AWS
+category: Security
+
+# Title
+
+AWS Zero Trust Reference Architecture
+
+## Problem
+
+## Problem
+
+Agentic AI applications operating in regulated environments must establish strong identity boundaries between users, AI agents, workloads, and cloud resources. Traditional perimeter-based security models are insufficient because AI agents dynamically access multiple systems, invoke tools, and exchange sensitive information.
+
+This reference architecture demonstrates how AWS security services can be combined to implement Zero Trust principles, enforce least-privilege access, provide end-to-end auditability, and reduce the attack surface from the beginning of the project.
+
+## When to use it
+
+## When to use it
+
+Use this reference architecture when designing AI or agentic applications that require:
+
+- Strong identity and authentication
+- Least-privilege authorization
+- End-to-end auditability
+- Separation of duties
+- Compliance with regulated environments
+- Secure communication between workloads and cloud services
+
+## When NOT to use it
+
+## When NOT to use it
+
+This reference architecture is not intended for:
+
+- Small prototypes or proof-of-concept projects where security requirements are minimal.
+- Deployments running primarily outside the AWS ecosystem.
+- Applications that do not require strict identity, authorization, or compliance controls.
+
+The architectural principles remain applicable, but the AWS-specific implementation should be adapted for other cloud providers.
+
+## Core concepts
+
+## Core concepts
+
+- Verify explicitly
+- Least privilege
+- Assume breach
+- Workload identity
+- Short-lived credentials
+- Identity federation
+- Network segmentation
+- Continuous authorization
+- Comprehensive audit logging
+
+
+## Advantages
+
+## Advantages
+
+- Reduces the attack surface.
+- Eliminates long-lived credentials.
+- Improves regulatory compliance.
+- Enables complete audit trails.
+- Simplifies security reviews.
+- Supports secure multi-agent architectures.
+
+## Trade-offs
+
+## Trade-offs
+
+- Higher operational complexity.
+- Additional IAM design effort.
+- Increased monitoring requirements.
+- More components to manage.
+- Longer implementation time during initial development.
+
+## Security considerations
+
+## Security considerations
+
+- Enforce MFA for human identities.
+- Use IAM Roles instead of static credentials.
+- Prefer workload identities over secrets.
+- Encrypt data at rest and in transit.
+- Enable CloudTrail organization-wide.
+- Rotate KMS keys according to policy.
+- Restrict network access using private endpoints where possible.
+
+## Related patterns
+
+## Related patterns
+
+- Identity Federation
+- Workload Identity
+- Least Privilege
+- Defense in Depth
+- Agent Interoperability
+- Secure Secret Management
+
+## References
+
+AWS Well-Architected Security Pillar
+AWS Zero Trust Whitepaper
+NIST SP 800-207 (Zero Trust Architecture)
+NIST AI RMF
+OWASP Top 10 for LLM Applications (where relevant)
+ISO 42001
+
 # Identity-First Zero Trust Pattern for Agentic Workloads on AWS
 
 
