@@ -87,12 +87,12 @@ The architectural principles remain applicable, but the AWS-specific implementat
 
 ## References
 
-AWS Well-Architected Security Pillar
-AWS Zero Trust Whitepaper
-NIST SP 800-207 (Zero Trust Architecture)
-NIST AI RMF
-OWASP Top 10 for LLM Applications (where relevant)
-ISO 42001
+- AWS Well-Architected Security Pillar
+- AWS Zero Trust Whitepaper
+- NIST SP 800-207 (Zero Trust Architecture)
+- NIST AI RMF
+- OWASP Top 10 for LLM Applications (where relevant)
+- ISO 42001
 
 ## Assumptions
 
