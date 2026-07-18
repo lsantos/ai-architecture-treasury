@@ -12,13 +12,9 @@ AWS Zero Trust Reference Architecture
 
 ## Problem
 
-## Problem
-
 Agentic AI applications operating in regulated environments must establish strong identity boundaries between users, AI agents, workloads, and cloud resources. Traditional perimeter-based security models are insufficient because AI agents dynamically access multiple systems, invoke tools, and exchange sensitive information.
 
 This reference architecture demonstrates how AWS security services can be combined to implement Zero Trust principles, enforce least-privilege access, provide end-to-end auditability, and reduce the attack surface from the beginning of the project.
-
-## When to use it
 
 ## When to use it
 
@@ -33,8 +29,6 @@ Use this reference architecture when designing AI or agentic applications that r
 
 ## When NOT to use it
 
-## When NOT to use it
-
 This reference architecture is not intended for:
 
 - Small prototypes or proof-of-concept projects where security requirements are minimal.
@@ -42,8 +36,6 @@ This reference architecture is not intended for:
 - Applications that do not require strict identity, authorization, or compliance controls.
 
 The architectural principles remain applicable, but the AWS-specific implementation should be adapted for other cloud providers.
-
-## Core concepts
 
 ## Core concepts
 
@@ -57,9 +49,6 @@ The architectural principles remain applicable, but the AWS-specific implementat
 - Continuous authorization
 - Comprehensive audit logging
 
-
-## Advantages
-
 ## Advantages
 
 - Reduces the attack surface.
@@ -71,15 +60,11 @@ The architectural principles remain applicable, but the AWS-specific implementat
 
 ## Trade-offs
 
-## Trade-offs
-
 - Higher operational complexity.
 - Additional IAM design effort.
 - Increased monitoring requirements.
 - More components to manage.
 - Longer implementation time during initial development.
-
-## Security considerations
 
 ## Security considerations
 
@@ -90,8 +75,6 @@ The architectural principles remain applicable, but the AWS-specific implementat
 - Enable CloudTrail organization-wide.
 - Rotate KMS keys according to policy.
 - Restrict network access using private endpoints where possible.
-
-## Related patterns
 
 ## Related patterns
 
@@ -110,6 +93,13 @@ NIST SP 800-207 (Zero Trust Architecture)
 NIST AI RMF
 OWASP Top 10 for LLM Applications (where relevant)
 ISO 42001
+
+## Assumptions
+
+- AWS Organizations is available.
+- IAM Identity Center is used for workforce identities.
+- Agent workloads run on EKS, ECS or Lambda.
+- CloudTrail and centralized logging are enabled.
 
 # Identity-First Zero Trust Pattern for Agentic Workloads on AWS
 
